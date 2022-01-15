@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+
+    <title>Landing page created by Gaurav Bhardwaj</title>
+    <!-- adding font_awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+    </script>
+    
+
+</head>
+<body style="background-color: rgb(54, 156, 224); padding: 0; ">
+  <div class="page">
+    <div class="section1">
+        <div class = "navbar">
+            <p style="float: left; font-size: 40px;"><a class="upskills" href="index.html"><i class="fas fa-chevron-circle-up"></i>&nbsp;Upyourskills.com</a>
+                <div class = "menu_icon"><i class="fas fa-bars" onclick="togglemenu()"></i></div>
+                </p>
+             <ul id = "menu_list">
+               <li><button class = "button info" id = "signup">Sign up</button></li>&nbsp;&nbsp;&nbsp;
+               <li><button class = "button info" id="signin">Sign in</button></li>&nbsp;&nbsp;
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="biodata.html" target=" " >About</a></li>
+        </div>
+
+  <!-- The Sign in Modal -->
+  <div id="my_signin_Modal" class="signin_modal">
+     
+    <!-- Modal content -->
+    <div class = "modal_signin">
+      <div class="head">
+        <span >SIGN IN</span>
+      </div>
+      <img src="avatar.jpg" class = "avatar">
+      <p>Username</p>
+      <input type="text" placeholder="Enter Username" class="name">
+      <p>Password</p>
+      <input type="password" placeholder="Enter Password" class="password">
+      <p> <input type="checkbox" class="checkbox">Remember me</p>
+      <button class="sign_in button"><span>Sign in</span></button>
+      </div>
+      <div class="bottom">
+      <button class="cancle1 button danger">Cancle</button>
+      <a class="forgot_password" href="#">Forgot Password ?</a>
+    </div>
+  </div>
+
+  <!-- The Sign up Modal -->
+<div id="my_signup_Modal" class="signup_modal">
+
+<!-- Modal content -->
+  <div class = "modal_signin">
+    <div class="head">
+      <span >SIGN UP</span>
+      <button class="cancle2 button"><i class="far fa-window-close "></i></button>
+    </div>
+    <img src="avatar.jpg" class = "avatar">
+    <p>Username</p>
+    <input type="text" placeholder="Enter Email-Id" class="name">
+    <p>Password</p>
+    <input type="password" placeholder="Create Password" class="password">
+    <button class="sign_up button"><span>Create Account</span></button>
+  </div>
+</div>
+        <div class = "left">
+         <p class="msg">Join us & take your skills to the next level</p>
+         <div class = "downoad_app" style="justify-content: center; display: flex; align-items: center; cursor: pointer; ">
+            <button class = "gp button"><span><i class="fab fa-google-play"></i> Download App</span></button>
+            <button class = "ap button"><span><i class="fab fa-apple"></i> Download App </span></button>
+         </div>
+         <div style="  display: flex;
+         justify-content: center;
+         align-items: center; cursor: pointer;">
+            <button class = "pc button"><span><i class="fab fa-apple"></i> Download for PC </span></button>
+         </div>
+         
+     
+        </div>
+        <div class = "right">
+          <img src="skilll.jpg" class = "img">
+        </div>
+        
+      </div>
+
+     <div  class = "footer">
+       <footer>
+         <p>You can also find us on</p>
+         
+         <span>
+             <i class="fab fa-facebook fa-3x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <i class="fab fa-instagram fa-3x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <i class="fab fa-twitter fa-3x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <i class="fab fa-youtube fa-3x"></i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <i class="far fa-copyright"></i> Copyright Upyourskills.com . All rights reserved.
+         </span>
+       
+       </footer>
+     </div>
+    </div>
+     
+     <script>
+
+/*JS FOR SIGN IN MODAL */
+
+// Get the modal
+var modal1 = document.getElementById("my_signin_Modal");
+
+// Get the button that opens the modal
+var signin = document.getElementById("signin");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("cancle1")[0];
+
+// When the user clicks the button, open the modal 
+signin.onclick = function() {
+modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal1.style.display = "none";
+}
+
+ /*JS FOR SIGN UP MODAL */
+
+  // Get the modal
+  var modal2 = document.getElementById("my_signup_Modal");
+
+// Get the button that opens the modal
+var signup = document.getElementById("signup");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("cancle2")[0];
+
+// When the user clicks the button, open the modal 
+signup.onclick = function() {
+modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal2.style.display = "none";
+}
+
+// toggle menu
+
+var menuList = document.getElementById("menu_list");
+
+
+function togglemenu() {
+    if(menuList.style.display === "none"){
+        menuList.style.display = "block";
+    }
+    else{
+        menuList.style.display = "none";
+    }
+}
+    </script>
+</body>
+</html>

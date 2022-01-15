@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    /* //background-color: aliceblue; */
+}
+
+.name {
+    font-family: 'Cormorant Garamond';
+    font-weight: 800;
+    color: rgb(250, 245, 245);
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+
+
+.student {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    font-family: 'David Libre';
+    font-size: 22px;
+    font-weight: lighter;
+    color: rgb(235, 230, 230);
+}
+
+.navbar{
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    width: 32%;
+    height: 800px;
+    background-color: #0468c5;
+  }
+  ul {
+    list-style-type: none;  
+  }
+
+  ul.info {
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  h3 {
+      margin: 5px;
+      margin-bottom: 15px;
+      font-weight: lighter;
+      font-size: 25px;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(242, 246, 248);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #1f226d;
+    color: white;
+    display: flex ;
+    font-size: larger;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(28, 138, 240);
+    color: white;
+    font-size: larger;
+  }
+
+  .brief {
+      margin-right: 30px;
+      margin-bottom: 35px;
+      font-family: 'Cormorant Garamond';
+      font-size: 16px;
+      line-height: 1.5;
+  }
+
+  .photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    float: right;
+    margin-right: 35px;
+    border: black;
+    box-shadow: rgb(185, 182, 182);
+  }
+
+  h2 {
+    color: rgb(66, 131, 253);
+    padding: 5px;
+    font-size: 30px ;
+  }
+
+  table {
+      border: black solid 4px;
+      margin-right: 18px;
+  }
+
+  th {
+      background-color: rgb(104, 100, 100);
+      color: white;
+      padding: 8px;
+  }
+
+  tr {
+      width: 50px;
+      border: solid black 2px;
+  }
+
+  td {
+    padding: 8px;
+    border: grey 3px solid;
+  }
+
+  .skilss {
+      margin-bottom: 0px;
+      margin-left: 25px;
+      font-size: 20px;
+      line-height: 1.5;
+  }
+
+  .star{
+    color: rgb(205, 248, 11);
+  }
+
+

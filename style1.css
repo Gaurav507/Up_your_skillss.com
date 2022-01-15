@@ -1,0 +1,692 @@
+
+        div{
+            /* border: black 4px solid; */
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        .navbar{
+            margin-left: 12.5%;
+            margin-right: 12.5%;
+        }
+
+        .menu_icon{
+            margin-left: 0;
+            display: none;
+            margin-top: 50px;
+            float: right;
+            width: 0;
+            color: rgb(255, 253, 253);
+            text-decoration: none;
+            font-weight: bolder;
+            /* margin: auto; */
+            text-align: right;
+            cursor: pointer;
+        }
+
+        ul {
+            text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(54, 156, 224);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 36px;
+}
+
+.upskills{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.upskills:hover{
+  font-size: larger;
+}
+
+li {
+  float: right;
+  font-size: 30px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(107, 107, 107);
+}  
+
+
+
+#signin{
+  margin-top: 10px;
+  margin-right: 20px;
+  /* float: right; */
+  margin-left: 8px;
+  height: 50px;
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  /* background-color: rgb(0, 38, 253); */
+  /* color: rgb(0, 0, 0); */
+  border-radius: 2%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.info {
+  border-color: #2196F3;
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+
+.info:hover {
+  background: #3c45c5;
+  color: white;
+}
+
+#signup{
+    text-align: center;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 20px;
+  /* float: right; */
+  height: 50px;
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  /* background-color: rgb(0, 38, 253); */
+  /* color: rgb(3, 3, 3); */
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+.msg{
+  margin-top: 70px;
+  margin-left: 180px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.left{
+  width: 45%;
+  float: left;
+  /* border: 2px black solid; */
+}
+
+.gp{
+  margin-left: 250px;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+  height: 40px;
+  width: 30%;
+  padding: 8px;
+  font-size: 15px;
+  background-color: rgb(36, 150, 25);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.ap{
+  margin-top: 10px;
+  float: left;
+  height: 40px;
+  width: 30%;
+  padding: 8px;
+  font-size: 15px;
+  background-color: rgb(29, 27, 27);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+
+.pc {
+  margin-left: 260px;
+  margin-top: 25px;
+  margin-right: 25px;
+  float: left;
+  height: 40px;
+  width: 50%;
+  padding: 8px;
+  font-size: 15px;
+  background-color: rgb(82, 85, 82);
+  color: white;
+  /* float: left; */
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.right{
+  width: 45%;
+  float: right;
+  /* border: solid 2px black; */
+}
+
+.img{
+  width: 75%;
+  height: 50%;
+  border-radius: 75%;
+  margin-top: 70px;
+  margin-bottom: 3%;
+  transform: rotate(-20deg);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.img:hover{
+  box-shadow: #888;
+  width: 78%;
+  height: 53%;
+}
+
+/* MODAL STYLING */
+
+.signin_modal {
+    overflow: hidden;
+  position: relative;
+  height: fit-content;
+  width: 400px;
+  padding: 5px;
+  background-color: white;
+  border: black 2px solid;
+  z-index: 1;
+  margin: auto;
+  display: none;
+  transition: all 1s;
+}
+.signin_modal:hover{
+  box-shadow: grey;
+  height: larger;
+  width: larger;
+}
+
+.signup_modal{
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  width: 400px;
+  padding: 5px;
+  background-color: white;
+  border: black 2px solid;
+  z-index: 1;
+  margin: auto;
+  display: none;
+  transition: all 1s;
+}
+
+.signup_modal:hover{
+  box-shadow: grey;
+  height: larger;
+  width: larger;
+}
+
+.avatar{
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  margin-left: 90px;
+  margin-right: 95px;
+  margin-top: 8px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.name,.password {
+  width: 90%;
+  height: 20px;
+  padding: 5px;
+  margin-left:10px ;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.sign_in{
+  float: right;
+  height: 50px;
+  width: 90%;
+  padding: 8px;
+  font-size: 18px;
+  background-color: rgb(68, 112, 233);
+  color: white;
+  margin-right: 19px;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+.head{
+  font-size: 25px;
+  background-color: rgb(51, 50, 50);
+  color: white;
+  margin: 0;
+  padding: 12px;
+}
+
+.sign_up{
+    float: right;
+    height: 50px;
+    width: 90%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: rgb(68, 112, 233);
+    color: white;
+    margin-top: 5%;
+    margin-right: 19px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+  }
+
+.cancle1{
+  margin-top: 10px;
+  float: left;
+  height: 40px;
+  width: 25%;
+  padding: 8px;
+  font-size: 15px;
+  /* background-color: rgb(245, 57, 57); */
+  color: white;
+}
+
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+.cancle2{
+  margin-top: 0px;
+  margin: bottom 3px ;
+  float: right;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.forgot_password{
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(18, 47, 212);
+}
+
+
+
+        .footer {
+            overflow: hidden;
+            background-color: rgb(31, 30, 30); 
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding: 2%;
+            padding-bottom: 5%;
+            /* border: white 3px solid; */
+            margin-top: 8%;
+            margin-left: 0%;
+            margin-bottom: 0;
+            margin-right: 0%;
+        }
+
+        @media (max-width:1450px){
+
+            .gp{
+            /* margin: 10px; */
+            margin-right: 50px;
+            width: 45%;
+            float: none;
+            height: 40px;
+            padding: 8px;
+            font-size: 15px;
+            background-color: rgb(52, 182, 19);
+            color: white;
+            margin-bottom: 12px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .ap{
+            /* margin: 10px; */
+            width: 45%;
+            float: right;
+            height: 40px;
+            padding: 8px;
+            font-size: 15px;
+            background-color: rgb(29, 27, 27);
+            color: white;
+            margin-bottom: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .pc{
+                width: 50%;
+            /* float: left; */
+            height: 40px;
+            padding: 8px;
+            font-size: 15px;
+            background-color: rgb(87, 82, 82);
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+
+        }
+
+
+        @media (max-width:1000px){
+
+            .upskills{
+                font-size: smaller;
+                cursor: pointer;
+            }
+
+            .menu_icon{
+                display: block;
+                width: 5%;
+            }
+
+            ul {
+            line-height: 1.2;
+            list-style-type: none;
+            display: inherit;
+            text-align: center;
+            /* padding-right: 10%; */
+            width: 100%;
+            display: none;
+            background-color: rgb(223, 232, 235);
+            color: #000;
+            float: right;
+            position: relative;
+            line-height: 1.2;
+            font-size: 25px;
+            text-decoration: none;
+            margin-left: auto;
+            margin-right: auto;
+            /* z-index: 2; */
+        }
+
+        #signin{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+        }
+
+        #signup{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li {
+   float: none; 
+  font-size: 30px;
+}
+
+li a {
+  display: block;
+  color: rgb(22, 22, 22);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(252, 247, 247);
+}
+
+
+
+            .left{
+                width: 100%;
+                margin: 0;
+                overflow: auto;
+                float: right;
+
+            }
+
+            .msg{
+                margin-top: auto;
+                margin-left: auto;
+                font-size: 50px;
+                text-align: center;
+                font-weight: bolder;
+            }
+
+            .right{
+                width: 100%;
+                margin: auto;
+                /* text-align: center; */
+                margin-left: auto;
+                margin-right: auto;
+                float: left;
+               
+            }
+
+            .img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            height: 50%;
+            border-radius: 75%;
+            margin-top: 15px;
+
+            transform: rotate(0);
+            
+            }
+
+            .gp{
+            /* margin: 10px; */
+            width: 45%;
+            float: left;
+            height: 40px;
+            padding: 8px;
+            font-size: 15px;
+            background-color: rgb(52, 182, 19);
+            color: white;
+            margin-bottom: 12px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .ap{
+            /* margin: 10px; */
+            width: 45%;
+            float: right;
+            height: 40px;
+            padding: 8px;
+            font-size: 15px;
+            background-color: rgb(29, 27, 27);
+            color: white;
+            margin-bottom: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .pc{
+                width: 50%;
+            /* float: left; */
+            height: 40px;
+            padding: 8px;
+            font-size: 15px;
+            background-color: rgb(87, 82, 82);
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+        } 
+
+        @media (max-width:600px){
+            .upskills{
+                font-size: 30px;
+            }
+
+            .msg{
+                font-size: 25px;
+            }
+
+            .menu_icon{
+                margin-top: 60px;
+            }
+
+            .signin_modal{
+                width: 80%;
+                margin-bottom: 8px;
+            }
+            
+            .signup_modal{
+                width: 80%;
+                margin-bottom: 8px;
+            }
+
+            .avatar{
+                margin-left: 20%;
+                margin-right: 12.5%;
+            }
+        }
+
+
+        @media (max-width:475px){
+
+        .navbar{
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 0px;
+        }
+
+        .gp{
+          height: fit-content;
+          width: fit-content;
+        }
+        
+        .ap{
+          height: fit-content;
+          width: fit-content;
+        }
+
+        .pc{
+          height: fit-content;
+          width: fit-content;
+        }
+
+        .avatar{
+          margin-left:0;
+          margin-right: 15px;
+        }
+
+        .img{
+          height: 300px;
+          width: 300px;
+        }
+
+        .upskills{
+          font-size: 25px;
+          margin: 0%;
+      }
+
+        .menu_icon{
+          margin-top: auto;
+        }
+
+      .msg{
+          font-size: 25px;
+      }
+
+      div{
+        margin: 0;
+      }
+        }
+
+
+        @media (max-width:325px){
+            .upskills{
+                font-size: 25px;
+            }
+
+            .msg{
+                font-size: 25px;
+            }
+
+            .menu_icon{
+              margin: auto;
+              margin-top: 22%;
+            }
+
+            .avatar{
+                height: 225px;
+                width: 225px;
+                margin-left: 8%;
+                margin-right: 8%;
+            }
+        }
+
+
+        
